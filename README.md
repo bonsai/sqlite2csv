@@ -13,8 +13,8 @@ SQLiteデータベースからCSVファイルへの変換を行う日本語対�
 ## � インストール
 
 ```bash
-git clone https://github.com/yourusername/sqlite-to-csv-converter.git
-cd sqlite-to-csv-converter
+git clone https://github.com/bonsai/sqlite2csv.git
+cd sqlite2csv
 ```
 
 必要な依存関係：
