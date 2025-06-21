@@ -1,0 +1,14 @@
+# SQLite to CSV Converter - Requirements
+# このプロジェクトは標準ライブラリのみを使用します
+
+# Python 3.6+ 標準ライブラリ
+# - sqlite3 (SQLiteデータベース操作)
+# - csv (CSV ファイル操作) 
+# - os (ファイルシステム操作)
+# - sys (システム関連)
+# - json (JSON処理)
+# - re (正規表現)
+# - datetime (日時操作)
+
+# 追加パッケージは不要です
+# pip install は必要ありません
