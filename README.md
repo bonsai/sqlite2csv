@@ -85,16 +85,29 @@ python sqlite2csv.py notes.db search "重要"
 python sqlite2csv.py backup.db export_all
 ```
 
+### 例4: Microsoft Sticky Notesデータの抽出（Windows）
+```bash
+# Sticky Notesデータベースをコピーして抽出
+copy "C:\Users\[ユーザー名]\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\plum.sqlite" plum.sqlite
+python sqlite2csv.py plum.sqlite inspect
+python sqlite2csv.py plum.sqlite export_all
+
+# 付属のバッチファイルを使用（より簡単）
+extract_sticky_notes.bat
+```
+
 ## 🏗️ プロジェクト構造
 
 ```
 sqlite-to-csv-converter/
-├── sqlite2csv.py          # メインスクリプト
-├── extract_memo_text.py   # メモテキスト抽出専用ツール
-├── extract_memo_fixed.py  # 文字化け対策版
-├── README.md              # このファイル
-├── requirements.txt       # 依存関係
-└── csv_exports/          # CSV出力ディレクトリ（自動作成）
+├── sqlite2csv.py              # メインスクリプト
+├── extract_memo_text.py       # メモテキスト抽出専用ツール
+├── extract_memo_fixed.py      # 文字化け対策版
+├── extract_sticky_notes.bat   # Sticky Notes自動抽出（Windows）
+├── extract_simple.bat         # 簡単版抽出バッチ
+├── README.md                  # このファイル
+├── requirements.txt           # 依存関係
+└── csv_exports/              # CSV出力ディレクトリ（自動作成）
 ```
 
 ## 🔧 技術詳細
